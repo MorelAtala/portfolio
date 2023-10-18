@@ -27,9 +27,6 @@
   .section-container {
     display: block;
   }
-  .arrow {
-    display: block;
-  }
   section,
   .section-container {
     height: fit-content;
@@ -42,9 +39,16 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+    .arrow {
+    left: auto; /* Réinitialise la propriété 'left' */
+    right: 1.5rem; /* Place l'élément tout à droite */
+    transform: none; /* Réinitialise la transformation */
+    bottom: 0rem;
+  }
   .about-containers {
     margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
