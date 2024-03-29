@@ -321,10 +321,14 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will space out the children evenly */
+  gap: 2rem; /* This adds some space between the cards */
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+
 
 .about-details-container {
   justify-content: center;
@@ -357,13 +361,16 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 0 1 calc(50% - 2rem); /* Makes sure that each box takes up half the container width minus the gap */
   background: var(--primary-color-2);
   border-radius: 0rem;
   border: var(--button-border);
   border-color: var(--container-border);
   text-align: center;
+  box-sizing: border-box; /* This ensures padding is included in the element's total width */
+  margin-bottom: 2rem; /* Adds some space between rows of cards on smaller screens */
 }
+
 
 .section-container {
   gap: 4rem;
