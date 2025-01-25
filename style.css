@@ -316,6 +316,73 @@ section {
 }
 
 /* ABOUT SECTION */
+/* ABOUT SECTION */
+#about {
+  position: relative;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 0 1 calc(33% - 2rem); /* Adjusts to show 3 items per row */
+  background: var(--primary-color-2);
+  border-radius: 0rem;
+  border: var(--button-border);
+  border-color: var(--container-border);
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.details-container img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.subject {
+  font-size: 1rem;
+  color: var(--secondary-color-2);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: var(--primary-color-3);
+  border-radius: 15px;
+}
+
+.progress-line {
+  position: absolute;
+  height: 100%;
+  background-color: var(--button-background);
+  border-radius: 15px;
+}
 
 #about {
   position: relative;
